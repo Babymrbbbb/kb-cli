@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+
+# 构建产物（每次 build_kb.py 重跑都会生成到脚本同级）
+_meta/
+会员体系/
+私域运营/
+门店管理/
+产品研发/
+竞品动态/
+品牌营销/
+行业趋势/
+日志沉淀/
+补充来源/
+历史归档/
+元数据库/
+其他/
+# 注：examples/ 是示例源数据，保留；sources/ 是你自己的原始文档，不提交
+sources/
+
+# 运行时临时文件
+*.log
+*.tmp
+last_result.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.lnk
+.idea/
+.vscode/
