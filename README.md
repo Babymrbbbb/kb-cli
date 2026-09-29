@@ -203,8 +203,8 @@ python kb.py query "分层"
 
 ## 相关项目
 
-- [`sensenova-gateway`](https://github.com/betianxia/sensenova-gateway) — 姊妹项目：本地 OpenAI 兼容网关，多 key 池 + 配额管理，同样零依赖
+- [`sensenova-gateway`](https://github.com/Babymrbbbb/my-sensenova-gateway) — 姊妹项目：本地 OpenAI 兼容网关，多 key 池 + 配额管理，同样零依赖
 
 ## License
 
-MIT © Betianxia
+MIT © Babymrbbbb
