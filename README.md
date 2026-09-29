@@ -227,7 +227,7 @@ python kb.py query "会员" -b 会员体系
 | 会员体系 | 会员、积分、储值、等级、VIP、权益、生日 |
 | 私域运营 | 社群、朋友圈、私域、裂变、打卡、群运营、互动 |
 | 产品研发 | 新品、研发、配方、口味、供应链、原料、测试 |
-| 竞品分析 | 竞品、对比、市场、价格、金粒门、玛芝莲、法大吉 |
+| 竞品分析 | 竞品、对比、市场、价格、竞品A、竞品B、竞品C |
 | 营销文案 | 文案、海报、物料、宣传、活动、促销、节日 |
 | 门店管理 | 门店、店长、员工、排班、培训、巡检、卫生 |
 | 聊天记录（默认） | 未匹配到以上关键词 |
@@ -285,7 +285,7 @@ chat_exports/                    sync_chat.py                    kb/
 
 ## 相关项目
 
-- [`sensenova-gateway`](https://github.com/Babymrbbbb/my-sensenova-gateway) — 姊妹项目：本地 OpenAI 兼容网关，多 key 池 + 配额管理，同样零依赖
+- [`sensenova-gateway`](https://github.com/Babymrbbbb/sensenova-gateway) — 姊妹项目：本地 OpenAI 兼容网关，多 key 池 + 配额管理，同样零依赖
 
 ## License
 
