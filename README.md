@@ -2,7 +2,7 @@
 
 **Zero-dependency local knowledge base with multi-sub-repo × multi-layer retrieval.**
 
-一个从零起手的本地知识库工具链：**构建器**（`build_kb.py`）把散落的 markdown/txt 文档重组为「多子库 × 多层」结构，**检索器**（`kb.py`）在上面做召回优先的全文检索。**两个文件，200 多行，零依赖，Python 3.8+ 直接跑。**
+一个从零起手的本地知识库工具链：**构建器**（`build_kb.py`）把散落的 markdown/txt 文档重组为「多子库 × 多层」结构，**检索器**（`kb.py`）在上面做召回优先的全文检索。**核心两个文件 200 多行，另附聊天记录同步脚本 sync_chat.py，零依赖，Python 3.8+ 直接跑。**
 
 ```
 你的原始文档                     build_kb.py                    kb-cli 检索
