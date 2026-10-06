@@ -285,7 +285,15 @@ chat_exports/                    sync_chat.py                    kb/
 
 ## 相关项目
 
-- [`sensenova-gateway`](https://github.com/Babymrbbbb/sensenova-gateway) — 姊妹项目：本地 OpenAI 兼容网关，多 key 池 + 配额管理，同样零依赖
+这条链路是**从真实业务里长出来的完整 AI 落地体系**：
+
+- [`sensenova-gateway`](https://github.com/Babymrbbbb/sensenova-gateway) — 零依赖本地 OpenAI 兼容网关，多 key 池 + 配额管理。**接入 AI**
+- [`prompt-craft`](https://github.com/Babymrbbbb/prompt-craft) — AI 提示词写法库（图像 + 视频）。**用好 AI**
+- [`ai-native-team`](https://github.com/Babymrbbbb/ai-native-team) — AI 原生组织 OS：把 40+ 自动化任务、数十个 AI 角色、多 AI 工具协作跑成业务生产线。**组织 AI 落地**
+
+```
+接入 AI（sensenova-gateway）→ 用好 AI（prompt-craft）→ 管理知识（本仓库）→ 组织 AI 落地（ai-native-team）
+```
 
 ## License
 
