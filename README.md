@@ -285,17 +285,34 @@ chat_exports/                    sync_chat.py                    kb/
 - **中文分词**：不做。字符串 `count` 是子串匹配，天然支持中文；但"AI"和"人工智能"不会被认为同义词
 - **跨平台**：`os.sep` 和路径处理都做了 Windows/Linux 兼容，但没在 macOS 上实测过
 
-## 相关项目
+## 这是一套体系的一部分，不是孤立项目
 
-这条链路是**从真实业务里长出来的完整 AI 落地体系**：
-
-- [`sensenova-gateway`](https://github.com/Babymrbbbb/sensenova-gateway) — 零依赖本地 OpenAI 兼容网关，多 key 池 + 配额管理。**接入 AI**
-- [`prompt-craft`](https://github.com/Babymrbbbb/prompt-craft) — AI 提示词写法库（图像 + 视频）。**用好 AI**
-- [`ai-native-team`](https://github.com/Babymrbbbb/ai-native-team) — AI 原生组织 OS：把 40+ 自动化任务、数十个 AI 角色、多 AI 工具协作跑成业务生产线。**组织 AI 落地**
+> **核心**：所有仓库围绕同一件事——让 45 家门店的真实业务被 AI 高效落地。每个仓库解决一个环节，合起来是一条完整生产线。
 
 ```
-接入 AI（sensenova-gateway）→ 用好 AI（prompt-craft）→ 管理知识（本仓库）→ 组织 AI 落地（ai-native-team）
+接入 AI（gateway）→ 用好 AI（prompt-craft）→ 管理/编译知识（本仓库 + llm-wiki）→ 组织 AI 落地（ai-native-team）→ 交付业务结果（驾驶舱 / 指挥台）
 ```
+
+### 本仓库在体系中的位置
+
+**为什么改造**：文档越攒越多，问题不是「存不下」，是**找不到**——1,600+ 篇原始资料散落各处，检索靠文件名猜，泛词淹没精确信息。不改，知识就是死数据。
+
+**意义**：把「知识」变成可检索的资产——多子库 × 三层结构（L1 速查 / L2 导航 / L3 原始）+ 召回优先检索 + IDF 加权修正泛词，让 AI 和人都能找到知识。
+
+**结合哪些部分**：
+- 检索底座升级为 **llm-wiki** 编译层：raw 原始资料 → 可导航 wiki 页
+- 知识被 **prompt-craft** 的优秀案例填充
+- 由 **ai-native-team** 的自动化任务每日维护入库
+- 检索结果被 **驾驶舱** 的 AI 结论卡引用
+
+**单独用的价值**：即使不用整套体系，任何「文档越攒越多找不到」的个人/团队都能直接用——分层结构 + 召回优先 + UTF-8 跨平台，零依赖开箱即用。
+
+### 相关项目
+
+- **[sensenova-gateway](https://github.com/Babymrbbbb/sensenova-gateway)** — 接入 AI：稳定模型调用底座
+- **[prompt-craft](https://github.com/Babymrbbbb/prompt-craft)** — 用好 AI：内容产出一遍过
+- **[llm-wiki](https://github.com/Babymrbbbb/llm-wiki)** — 编译知识：raw → wiki → RAG 双轨编译层
+- **[ai-native-team](https://github.com/Babymrbbbb/ai-native-team)** — 组织 AI 落地：知识库每日维护自动化
 
 ## License
 
