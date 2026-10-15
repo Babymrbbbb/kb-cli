@@ -27,7 +27,7 @@ from pathlib import Path
 # ============ 配置区（按需修改）============
 
 SYNC_CONFIG = {
-    # 源目录：聊天记录导出目录（微信/企微导出的 txt/md 文件）
+    # 源目录：聊天记录导出目录（私域/社群导出的 txt/md 文件）
     "source_dir": "./chat_exports",
     
     # 知识库目录：kb-cli 构建的知识库
